@@ -11,7 +11,7 @@ semua distronya sudah menyertakan Python di dalamnya.
 Dengan kode yang simpel dan mudah diimplementasikan, seorang programmer dapat lebih
 mengutamakan pengembangan aplikasi yang dibuat, bukan malah sibuk mencari syntax error.
 
-print("Python sangat simpel")
+print("Follow github suryapardana")
 
 Hanya dengan menuliskan kode print seperti yang diatas, anda sudah bisa mencetak apapun yang
 anda inginkan di dalam tanda kurung (). Dibagian akhir kode pun, anda tidak harus
