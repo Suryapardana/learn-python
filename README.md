@@ -102,3 +102,46 @@ atau
 - Masuk ke direktori dimana file Python Anda disimpan (contoh: cd /Users/admin/Desktop/).
 - Jalankan script Python dengan menggunakan python diikuti dengan nama file (contoh: python cetak.py).
 - Script Python Anda akan dieksekusi/dijalankan.
+
+# Syntax Dasar Python
+Dibawah ini adalah contoh fungsi Python yang digunakan untuk mencetak. Di Python untuk mencetak cukup gunakan fungsi print(), dimana sesuatu yang akan dicetak harus diletakkan diantara kurung buka dan kurung tutup, bahkan di Python versi 2.x Anda tidak harus menggunakan tanda kurung kurawal, cukup pisahkan dengan spasi.
+Jika ingin mencetak tipe data String langsung, Anda harus memasukanya ke dalam tanda kutip terlebih dahulu.
+
+print("Hello World")
+
+Saat anda menjalankan script diatas, Anda akan melihat output berupa text Hello World
+
+# Komentar Python
+
+Komentar (comment) adalah kode di dalam script Python yang tidak dieksekusi atau tidak dijalankan mesin. Komentar hanya digunakan untuk menandai atau memberikan keterangan tertulis pada script.
+Komentar biasa digunakan untuk membiarkan orang lain memahami apa yang dilakukan script. atau untuk mengingatkan kepada programmer sendiri jika suatu saat kembali mengedit script tersebut.
+Untuk menggunakan komentar anda cukup menulis tanda pagar #, diikuti dengan komentar Anda.
+Dibawah ini adalah contoh penggunaan komentar pada Python.
+'''
+#Ini adalah komentar
+
+#Tulisan ini tidak akan dieksekusi
+
+#komentar dengan tanda pagar hanya bisa digunakan
+
+#untuk
+
+#satu
+
+#baris
+
+print("Hello World") #ini juga komentar
+
+#print("Welcome")
+
+# komentar bisa berisi spesial karakter !@#$%^&*(),./;'[]\
+
+#mencetak nama
+
+print("Budi")
+
+#mencetak angka/integer
+
+print(123)
+'''
+Saat anda menjalankan script diatas, Anda akan melihat output berupa Hello World, Budi dan 123, karena tulisan/komentar yang ditulis tidak dieksekusi.
