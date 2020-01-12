@@ -44,3 +44,20 @@ Langkah ini akan menginstal Python di lokasi standar /usr/local/bin dan library 
 - Download versi terbaru Python untuk Macintosh
 - Buka file yang baru saja di download
 - Ikuti langkah instalasi sampai selesa
+
+# Integrated Daveloper Environment
+IDE adalah sebuah software aplikasi yang memberikan Anda fasilitas bermanfaat ketik membuat program. Biasanya sebuah IDE terdiri dari source code editor build automation tool dan debugger.
+Untuk menulis sebuah program, bisa menggunakan text editor atau IDE nya. Bagi yang sudah mahir, menulis program dengan text editor bukanlah menjadi masalah. Tetapi untuk pemula, akan lebih mudah menggunakan IDE. IDE untuk Python sangatlah banyak, tersedia bermacam-macam IDE dengan kelebihan dan kekurangan masing-masing.
+
+Beberapa IDE untuk Python yang cukup populer adalah :
+
+• Komodo
+• LiClipse
+• NetBeans
+• PyCharm
+• Kdevelop
+• PyDev
+• Wing IDE
+• dan masih banyak lainnya
+
+ (http://wiki.python.org/moin/IntegratedDevelopmentEnvironments).
