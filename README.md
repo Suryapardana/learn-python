@@ -61,3 +61,44 @@ Beberapa IDE untuk Python yang cukup populer adalah :
 - dan masih banyak lainnya
 
  (http://wiki.python.org/moin/IntegratedDevelopmentEnvironments).
+
+# Menjalankan Python
+Untuk menjalankan Python ada banyak cara yang bisa dilakukan. Anda bisa menggunakan sheel, terminal atau menggunakan IDE (Integrated Development Environment). Di bawah ini adalah langkah-langkah menjalankan Python dengan cara yang paling mudah.
+
+## 2.1 Linux
+- Buka terminal (Ctrl + Alt + T)
+- Ketik python maka Anda akan masuk ke sheel Python. 
+- Tuliskan script Python Anda, contoh: print("Selamat datang di Python"). jika sudah tekan tombol Enter, dan script Python akan dijalankan/eksekusi.
+- Untuk keluar dari sheel Python ketik exit()
+
+atau 
+
+- Gunakan teks editor, misalnya gedit.
+- Buat file baru, dan ketikan script python Anda, contoh: print("Selamat datang di Python").
+- Save As dengan ekstensi .py (contoh: cetak.py).
+- Jalankan file dengan menggunakan Terminal.
+- Buka terminal (Ctrl + Alt + T).
+- Masuk ke direktori dimana file Python Anda disimpan (contoh: cd /Users/admin/Desktop/).
+- Jalankan script Python dengan menggunakan python diikuti dengan nama file (contoh: python cetak.py).
+- Script Python Anda akan dieksekusi/dijalankan.
+
+ ## 2.2 Windows
+
+- Buka Python sheel, Anda bisa mencarinya di tombol Start.
+- Tuliskan script Python Anda, contoh: print("Selamat datang di Python"). jika sudah tekan tombol Enter, dan script Python akan dijalankan/eksekusi.
+- Untuk keluar dari sheel Python ketik exit()
+
+## 2.3 Macintosh
+
+- Buka terminal.
+- Ketik python maka Anda akan masuk ke sheel Python. 
+- Tuliskan script Python Anda, contoh: print("Selamat datang di Python"). jika sudah tekan tombol Enter, dan script Python akan dijalankan/eksekusi.
+- Untuk keluar dari sheel Python ketik exit() atau 
+- Gunakan teks editor.
+- Buat file baru, dan ketikan script python Anda, contoh: print("Selamat datang di Python").
+- Save As dengan ekstensi .py (contoh: cetak.py).
+- Jalankan file dengan menggunakan Terminal.
+- Buka terminal (Ctrl + Alt + T).
+- Masuk ke direktori dimana file Python Anda disimpan (contoh: cd /Users/admin/Desktop/).
+- Jalankan script Python dengan menggunakan python diikuti dengan nama file (contoh: python cetak.py).
+- Script Python Anda akan dieksekusi/dijalankan.
