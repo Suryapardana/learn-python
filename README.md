@@ -51,13 +51,13 @@ Untuk menulis sebuah program, bisa menggunakan text editor atau IDE nya. Bagi ya
 
 Beberapa IDE untuk Python yang cukup populer adalah :
 
-• Komodo
-• LiClipse
-• NetBeans
-• PyCharm
-• Kdevelop
-• PyDev
-• Wing IDE
-• dan masih banyak lainnya
+- Komodo
+- LiClipse
+- NetBeans
+- PyCharm
+- Kdevelop
+- PyDev
+- Wing IDE
+- dan masih banyak lainnya
 
  (http://wiki.python.org/moin/IntegratedDevelopmentEnvironments).
