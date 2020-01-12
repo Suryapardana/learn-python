@@ -23,6 +23,7 @@ Sebelum Anda menggunakan Python, Anda harus menginstalnya terlebih dahulu di sis
 Cara menginstal python sangat mudah, ikuti panduan dibawah ini. Dibawah adalah panduan cara instal python di platform Linux, Windows dan Mac OS.
 
 ## 1.1 Linux
+```
 - Buka browser, kunjungi http://www.python.org/downloads/source/
 - Download versi terbaru Python berbentuk file zip untuk Unix/Linux
 - Ekstrak file zip yang baru saja di download
@@ -30,21 +31,24 @@ Cara menginstal python sangat mudah, ikuti panduan dibawah ini. Dibawah adalah p
 - Jalankan ./configure script
 - make
 - make install
-
+```
 Langkah ini akan menginstal Python di lokasi standar /usr/local/bin dan library di /usr/local/lib/pythonXX dimana XX adalah versi terbaru Python yang anda gunakan.
 
  ## 1.2 Windows
+```
 - Buka browser, kunjungi http://www.python.org/downloads/windows/
 - ATAU, klik direct link https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi
 - Buka (klik 2x) file installer python yang baru saja di download
 - Ikuti langkah instalasi sampai selesai
+```
 
 ##  1.3 Mac OS
+```
 - Buka browser, kunjungi http://www.python.org/download/mac/
 - Download versi terbaru Python untuk Macintosh
 - Buka file yang baru saja di download
 - Ikuti langkah instalasi sampai selesa
-
+```
 # Integrated Daveloper Environment
 IDE adalah sebuah software aplikasi yang memberikan Anda fasilitas bermanfaat ketik membuat program. Biasanya sebuah IDE terdiri dari source code editor build automation tool dan debugger.
 Untuk menulis sebuah program, bisa menggunakan text editor atau IDE nya. Bagi yang sudah mahir, menulis program dengan text editor bukanlah menjadi masalah. Tetapi untuk pemula, akan lebih mudah menggunakan IDE. IDE untuk Python sangatlah banyak, tersedia bermacam-macam IDE dengan kelebihan dan kekurangan masing-masing.
@@ -117,7 +121,7 @@ Komentar (comment) adalah kode di dalam script Python yang tidak dieksekusi atau
 Komentar biasa digunakan untuk membiarkan orang lain memahami apa yang dilakukan script. atau untuk mengingatkan kepada programmer sendiri jika suatu saat kembali mengedit script tersebut.
 Untuk menggunakan komentar anda cukup menulis tanda pagar #, diikuti dengan komentar Anda.
 Dibawah ini adalah contoh penggunaan komentar pada Python.
-'''
+```
 #Ini adalah komentar
 
 #Tulisan ini tidak akan dieksekusi
@@ -134,7 +138,7 @@ print("Hello World") #ini juga komentar
 
 #print("Welcome")
 
-# komentar bisa berisi spesial karakter !@#$%^&*(),./;'[]\
+#komentar bisa berisi spesial karakter !@#$%^&*(
 
 #mencetak nama
 
@@ -143,5 +147,6 @@ print("Budi")
 #mencetak angka/integer
 
 print(123)
-'''
+```
+
 Saat anda menjalankan script diatas, Anda akan melihat output berupa Hello World, Budi dan 123, karena tulisan/komentar yang ditulis tidak dieksekusi.
