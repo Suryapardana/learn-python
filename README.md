@@ -150,3 +150,14 @@ print(123)
 ```
 
 Saat anda menjalankan script diatas, Anda akan melihat output berupa Hello World, Budi dan 123, karena tulisan/komentar yang ditulis tidak dieksekusi.
+
+# Python Case Sensitive
+Python bersifat case sensitif, ini artinya huruf besar dan huruf kecil memiliki perbedaan.
+Sebagai contoh jika Anda menggunakan fungsi print dengan huruf kecil print() akan
+berhasil. Lain hal jika anda menggunakan huruf kapital Print() atau PRINT(), akan
+muncul pesan error.
+Aturan ini berlaku untuk nama variabel ataupun fungsi-fungsi lainya
+
+
+
+
