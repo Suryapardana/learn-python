@@ -1329,19 +1329,19 @@ Secara sederhana modul adalah file yang terdiri dari kode Python. Modul dapat me
 
 Berikut adalah contoh modul sederhana pada Python :
 
-
+```
 {% highlight python %}
 def print_func( par ):
    print "Halo : ", par
    return
 {% endhighlight %}
-
+```
 ### Import Statement
 
 Anda dapat menggunakan file sumber Python apapun sebagai modul dengan mengeksekusi pernyataan impor di file sumber Python lainnya. Impornya memiliki sintaks berikut.
 
 Ketika interpreter menemukan sebuah pernyataan import, ia mengimpor modul jika modul tersebut ada di jalur pencarian. Jalur pencarian adalah daftar direktori yang ditafsirkan juru bahasa sebelum mengimpor modul. Misalnya, untuk mengimpor modul hello.py, Anda perlu meletakkan perintah berikut di bagian atas script.
-
+```
 {% highlight python %}
 ## Import module support
 import support
@@ -1350,15 +1350,7 @@ import support
 support.print_func("Andy")
 {% endhighlight %}
 ```
-<div class="row navigation-tutorial">
-    <div class="col-md-6 prev-tutorial">
-        <a href="/tutorial/fungsi-python"><i class="fas fa-arrow-circle-left"></i>Fungsi Python</a>
-    </div>
-    <div class="col-md-6 next-tutorial">
-        <a href="/tutorial/file-io-python" class="hoverable">File I/O Python<i class="fas fa-arrow-circle-right"></i></a>
-    </div>
-</div>
-```
+
 # I/O
 Disini kita akan belajar semua fungsi dasar I/O yang tersedia pada Python 3. Jika Anda ingin mempelajari lebih detail, lihat dokumentasi standar Python.
 
@@ -1395,14 +1387,7 @@ something:'10' #entered data treated as string with or without ''
 "'10'"
 {% endhighlight %}
 
-<div class="row navigation-tutorial">
-    <div class="col-md-6 prev-tutorial">
-        <a href="/tutorial/modul-python"><i class="fas fa-arrow-circle-left"></i>Modul Python</a>
-    </div>
-    <div class="col-md-6 next-tutorial">
-        <a href="/tutorial/exception-python" class="hoverable">Exception Python<i class="fas fa-arrow-circle-right"></i></a>
-    </div>
-</div>
+
 ```
 # Exception Python
 Python menyediakan dua fitur yang sangat penting untuk menangani kesalahan tak terduga dalam program Python Anda dan menambahkan kemampuan debugging di dalamnya.
@@ -1446,13 +1431,102 @@ Ketika skrip Python menimbulkan Exception, ia harus menangani Exception begitu s
 | ValueError	| 	Dibesarkan ketika fungsi bawaan untuk tipe data memiliki jenis argumen yang valid, namun argumen tersebut memiliki nilai yang tidak valid yang ditentukan.	| 
 | RuntimeError	| 	Dibesarkan saat kesalahan yang dihasilkan tidak termasuk dalam kategori apa pun.	| 
 | NotImplementedError		| Dibesarkan ketika metode abstrak yang perlu diimplementasikan di kelas warisan sebenarnya tidak dilaksanakan.	| 
+
+Python telah menjadi bahasa berorientasi objek sejak bahasa Python sendiri dibuat. Untuk membuat dan menggunakan kelas dan objek pada Python benar-benar mudah. Pada tutorial ini Anda akan dibantu untuk menjadi ahli dalam penggunaan pemrograman berorientasi objek Python.
+
+Jika Anda tidak memiliki pengalaman sebelumnya dengan pemrograman berorientasi objek (OOP), Anda mempelajarinya terlebih dahulu agar Anda dapat memahami konsep dasarnya.
+
+Jika memang sudah mengerti konsep dasar OOP berikut ini adalah pengenalan dari Object-Oriented Programming (OOP) untuk membantu Anda.
+
+### Istilah Dalam OOP
+
+| Istilah | Penjelasan |
+| --- | --- |
+| Class	 | Prototipe yang ditentukan pengguna untuk objek yang mendefinisikan seperangkat atribut yang menjadi ciri objek kelas apa pun. Atribut adalah data anggota (variabel kelas dan variabel contoh) dan metode, diakses melalui notasi titik. | 
+| Class variable | 	Sebuah variabel yang dibagi oleh semua contoh kelas. Variabel kelas didefinisikan dalam kelas tapi di luar metode kelas manapun. Variabel kelas tidak digunakan sesering variabel contoh. | 
+| Data member | 	Variabel kelas atau variabel contoh yang menyimpan data yang terkait dengan kelas dan objeknya. | 
+| Function overloading | 	Penugasan lebih dari satu perilaku ke fungsi tertentu. Operasi yang dilakukan bervariasi menurut jenis objek atau argumen yang terlibat. | 
+| Instance variable	 | Variabel yang didefinisikan di dalam sebuah metode dan hanya dimiliki oleh instance kelas saat ini. | 
+| Inheritance	 | Pengalihan karakteristik kelas ke kelas lain yang berasal darinya. | 
+| Instance	 | Objek individu dari kelas tertentu. Obyek obj yang termasuk dalam Lingkaran kelas, misalnya, adalah turunan dari Lingkaran kelas. | 
+| Instantiation	 | Penciptaan sebuah instance dari sebuah kelas. | 
+| Method | 	Jenis fungsi khusus yang didefinisikan dalam definisi kelas. | 
+| Object | 	Contoh unik dari struktur data yang didefinisikan oleh kelasnya. Objek terdiri dari kedua anggota data (variabel kelas dan variabel contoh) dan metode. | 
+| Operator overloading | 	Penugasan lebih dari satu fungsi ke operator tertentu. | 
+
+
+# Membuat Class Python
+
+Statement class digunakan untuk membuat definisi kelas baru. Nama kelas segera mengikuti kelas kata kunci diikuti oleh titik dua sebagai berikut.
+
+`class ClassName:` `'Optional class documentation string'` `class_suite`
+
+Dibawah ini adalah contoh cara membuat class dan penggunaanya :
 ```
-<div class="row navigation-tutorial">
-    <div class="col-md-6 prev-tutorial">
-        <a href="/tutorial/file-io-python"><i class="fas fa-arrow-circle-left"></i>File I/O Python</a>
-    </div>
-    <div class="col-md-6 next-tutorial">
-        <a href="/tutorial/object-class-python" class="hoverable">Object & Class Python<i class="fas fa-arrow-circle-right"></i></a>
-    </div>
-</div>
+{% highlight python %}
+class Employee:
+   'Common base class for all employees'
+   empCount = 0
+
+   def __init__(self, name, salary):
+      self.name = name
+      self.salary = salary
+      Employee.empCount += 1
+   
+   def displayCount(self):
+     print "Total Employee %d" % Employee.empCount
+
+   def displayEmployee(self):
+      print "Name : ", self.name,  ", Salary: ", self.salary
+{% endhighlight %}
+```
+### Membuat Instance Objects
+
+To create instances of a class, you call the class using class name and pass in whatever arguments its __init__ method accepts Untuk membuat instances kelas, Anda memanggil class menggunakan nama class dan meneruskan argumen apa pun yang metode __init__ terima.
+
+```
+{% highlight python %}
+This would create first object of Employee class
+emp1 = Employee("Zara", 2000)
+This would create second object of Employee class
+emp2 = Employee("Manni", 5000)
+{% endhighlight %}
+```
+### Mengakses Atribut
+
+Anda mengakses atribut objek menggunakan dot operator dengan objek. Variabel kelas akan diakses dengan menggunakan nama kelas sebagai berikut :
+```
+{% highlight python %}
+emp1.displayEmployee()
+emp2.displayEmployee()
+print ("Total Employee %d" % Employee.empCount)
+{% endhighlight %}
+```
+Contoh lengkapnya, silahkan lihat kode dibawah ini.
+```
+{% highlight python %}
+class Employee:
+   'Common base class for all employees'
+   empCount = 0
+
+   def __init__(self, name, salary):
+      self.name = name
+      self.salary = salary
+      Employee.empCount += 1
+   
+   def displayCount(self):
+     print ("Total Employee %d" % Employee.empCount)
+
+   def displayEmployee(self):
+      print ("Name : ", self.name,  ", Salary: ", self.salary)
+
+
+#This would create first object of Employee class"
+emp1 = Employee("Zara", 2000)
+#This would create second object of Employee class"
+emp2 = Employee("Manni", 5000)
+emp1.displayEmployee()
+emp2.displayEmployee()
+print ("Total Employee %d" % Employee.empCount)
+{% endhighlight %}
 ```
