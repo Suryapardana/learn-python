@@ -1322,3 +1322,137 @@ something:'10' #entered data treated as string with or without ''
 "'10'"
 {% endhighlight %}
 ```
+# Modul
+Modul memungkinkan Anda mengatur kode Python secara logis. Mengelompokkan kode terkait ke dalam modul membuat kode lebih mudah dipahami dan digunakan. Modul adalah objek Python dengan atribut yang diberi nama yang bisa Anda bind dan dijadikan referensi.
+
+Secara sederhana modul adalah file yang terdiri dari kode Python. Modul dapat mendefinisikan fungsi, kelas dan variabel. Modul juga bisa menyertakan kode yang bisa dijalankan "runable".
+
+Berikut adalah contoh modul sederhana pada Python :
+
+
+{% highlight python %}
+def print_func( par ):
+   print "Halo : ", par
+   return
+{% endhighlight %}
+
+### Import Statement
+
+Anda dapat menggunakan file sumber Python apapun sebagai modul dengan mengeksekusi pernyataan impor di file sumber Python lainnya. Impornya memiliki sintaks berikut.
+
+Ketika interpreter menemukan sebuah pernyataan import, ia mengimpor modul jika modul tersebut ada di jalur pencarian. Jalur pencarian adalah daftar direktori yang ditafsirkan juru bahasa sebelum mengimpor modul. Misalnya, untuk mengimpor modul hello.py, Anda perlu meletakkan perintah berikut di bagian atas script.
+
+{% highlight python %}
+## Import module support
+import support
+
+## Anda bisa memanggil fungsi defined sebagai berikut
+support.print_func("Andy")
+{% endhighlight %}
+```
+<div class="row navigation-tutorial">
+    <div class="col-md-6 prev-tutorial">
+        <a href="/tutorial/fungsi-python"><i class="fas fa-arrow-circle-left"></i>Fungsi Python</a>
+    </div>
+    <div class="col-md-6 next-tutorial">
+        <a href="/tutorial/file-io-python" class="hoverable">File I/O Python<i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+```
+# I/O
+Disini kita akan belajar semua fungsi dasar I/O yang tersedia pada Python 3. Jika Anda ingin mempelajari lebih detail, lihat dokumentasi standar Python.
+
+### Print
+
+Cara termudah untuk menghasilkan output adalah dengan menggunakan pernyataan cetak di mana Anda bisa melewati nol atau lebih banyak ekspresi yang dipisahkan dengan koma. Fungsi ini mengubah ekspresi yang Anda berikan ke string dan menulis hasilnya ke output standar sebagai berikut :
+```
+{% highlight python %}
+print ("Python adalah bahasa pemrograman yang hebat")
+{% endhighlight %}
+```
+### Membaca Input Keyboard
+
+Python 2 memiliki dua fungsi built-in untuk membaca data dari input standar, yang secara default berasal dari keyboard. Fungsi ini adalah input() dan raw_input()
+
+Dengan Python 3, fungsi raw_input() tidak digunakan lagi. Selain itu, input() berfungsi membaca data dari keyboard sebagai string, terlepas dari apakah itu tertutup dengan tanda kutip ('' atau '") atau tidak.
+
+### Fungsi Input Python
+
+Fungsi input([prompt]) setara dengan raw_input, kecuali mengasumsikan bahwa input adalah ekspresi Python yang valid dan mengembalikan hasil yang dievaluasi ke Anda.
+
+```
+{% highlight python %}
+>>> x = input("something:")
+something:10
+
+>>> x
+'10'
+
+>>> x = input("something:")
+something:'10' #entered data treated as string with or without ''
+
+>>> x
+"'10'"
+{% endhighlight %}
+
+<div class="row navigation-tutorial">
+    <div class="col-md-6 prev-tutorial">
+        <a href="/tutorial/modul-python"><i class="fas fa-arrow-circle-left"></i>Modul Python</a>
+    </div>
+    <div class="col-md-6 next-tutorial">
+        <a href="/tutorial/exception-python" class="hoverable">Exception Python<i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+```
+# Exception Python
+Python menyediakan dua fitur yang sangat penting untuk menangani kesalahan tak terduga dalam program Python Anda dan menambahkan kemampuan debugging di dalamnya.
+
+- Exception Handling
+- Assertions
+Exception adalah sebuah peristiwa, yang terjadi selama pelaksanaan program yang mengganggu aliran normal instruksi program. Secara umum, ketika skrip Python menemukan situasi yang tidak dapat diatasi, hal itu menimbulkan pengecualian. Exception adalah objek Python yang mewakili kesalahan.
+
+Ketika skrip Python menimbulkan Exception, ia harus menangani Exception begitu saja sehingga berhenti dan berhenti.
+
+### Standard Exceptions
+
+| Nama	| Penjelasan	| 
+| --- | --- |
+| Exception		| Kelas dasar untuk semua pengecualian / exception	| 
+| StopIteration		| Dibesarkan ketika metode (iterator) berikutnya dari iterator tidak mengarah ke objek apa pun.	| 
+| SystemExit	| 	Dibesarkan oleh fungsi sys.exit ().	| 
+| StandardError		| Kelas dasar untuk semua pengecualian built-in kecuali StopIteration dan SystemExit.	| 
+| ArithmeticError	| 	Kelas dasar untuk semua kesalahan yang terjadi untuk perhitungan numerik.	| 
+| OverflowError		| Dibesarkan saat perhitungan melebihi batas maksimum untuk tipe numerik.	| 
+| FloatingPointError	| 	Dibesarkan saat perhitungan floating point gagal.	| 
+| ZeroDivisonError	| 	Dibesarkan saat pembagian atau modulo nol dilakukan untuk semua tipe numerik.	| 
+| AssertionError	| 	Dibesarkan jika terjadi kegagalan pernyataan Assert.	| 
+| AttributeError	| 	Dibesarkan jika terjadi kegagalan referensi atribut atau penugasan.	| 
+| EOFError		| Dibesarkan bila tidak ada input dari fungsi raw_input () atau input () dan akhir file tercapai.	| 
+| ImportError		| Dibesarkan saat sebuah pernyataan impor gagal.	| 
+| KeyboardInterrupt	| 	Dibesarkan saat pengguna menyela eksekusi program, biasanya dengan menekan Ctrl + c.	| 
+| LookupError	| 	Kelas dasar untuk semua kesalahan pencarian.	| 
+| IndexError	| 	Dibesarkan saat sebuah indeks tidak ditemukan secara berurutan.	| 
+| KeyError		| Dibesarkan saat kunci yang ditentukan tidak ditemukan dalam kamus.	| 
+| NameError		| Dibesarkan saat pengenal tidak ditemukan di namespace lokal atau global.	| 
+| UnboundLocalError	| 	Dibesarkan saat mencoba mengakses variabel lokal dalam suatu fungsi atau metode namun tidak ada nilai yang ditugaskan padanya.	| 
+| EnvironmentError	| 	Kelas dasar untuk semua pengecualian yang terjadi di luar lingkungan Python.	| 
+| IOError	| 	Dibesarkan saat operasi input / output gagal, seperti pernyataan cetak atau fungsi open () saat mencoba membuka file yang tidak ada.	| 
+| OSError	| 	Dibangkitkan untuk kesalahan terkait sistem operasi.	| 
+| SyntaxError	| 	Dibesarkan saat ada kesalahan dengan sintaks Python.	| 
+| IndentationError	| 	Dibesarkan saat indentasi tidak ditentukan dengan benar.	| 
+| SystemError	| 	Dibesarkan saat penafsir menemukan masalah internal, namun bila kesalahan ini ditemui juru bahasa Python tidak keluar.	| 
+| SystemExit	| 	Dibesarkan saat juru bahasa Python berhenti dengan menggunakan fungsi sys.exit (). Jika tidak ditangani dalam kode, menyebabkan penafsir untuk keluar.	| 
+| TypeError		| Dibesarkan saat operasi atau fungsi dicoba yang tidak valid untuk tipe data yang ditentukan.	| 
+| ValueError	| 	Dibesarkan ketika fungsi bawaan untuk tipe data memiliki jenis argumen yang valid, namun argumen tersebut memiliki nilai yang tidak valid yang ditentukan.	| 
+| RuntimeError	| 	Dibesarkan saat kesalahan yang dihasilkan tidak termasuk dalam kategori apa pun.	| 
+| NotImplementedError		| Dibesarkan ketika metode abstrak yang perlu diimplementasikan di kelas warisan sebenarnya tidak dilaksanakan.	| 
+```
+<div class="row navigation-tutorial">
+    <div class="col-md-6 prev-tutorial">
+        <a href="/tutorial/file-io-python"><i class="fas fa-arrow-circle-left"></i>File I/O Python</a>
+    </div>
+    <div class="col-md-6 next-tutorial">
+        <a href="/tutorial/object-class-python" class="hoverable">Object & Class Python<i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+```
