@@ -50,6 +50,7 @@ Langkah ini akan menginstal Python di lokasi standar /usr/local/bin dan library 
 - Ikuti langkah instalasi sampai selesa
 ```
 # Integrated Daveloper Environment
+
 IDE adalah sebuah software aplikasi yang memberikan Anda fasilitas bermanfaat ketik membuat program. Biasanya sebuah IDE terdiri dari source code editor build automation tool dan debugger.
 Untuk menulis sebuah program, bisa menggunakan text editor atau IDE nya. Bagi yang sudah mahir, menulis program dengan text editor bukanlah menjadi masalah. Tetapi untuk pemula, akan lebih mudah menggunakan IDE. IDE untuk Python sangatlah banyak, tersedia bermacam-macam IDE dengan kelebihan dan kekurangan masing-masing.
 
