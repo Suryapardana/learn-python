@@ -2048,3 +2048,5 @@ Jalankan server dengan perintah :
 `python hello.py runserver`
 
 Server HTTP Django akan mulai dan jika Anda membuka [http://127.0.0.1:8000/hello/](http://127.0.0.1:8000/hello/)
+
+# Untuk lebih lengkapnya anda bisa cek di [python.org](python.org)
