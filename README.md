@@ -1762,14 +1762,15 @@ Setelah Anda eksekusi kode diatas, akan muncul hasil seperti dibawah ini :
 
 Operasi UPDATE pada database apapun berarti mengupdate satu atau lebih catatan, yang sudah tersedia di database.
 Prosedur berikut memperbarui semua catatan yang memiliki SEX sebagai 'M'. Di sini, kita meningkatkan UMUR semua laki-laki satu tahun.
+
 ```
 {% highlight python %}
 import PyMySQL
 
-# Open database connection
+## Open database connection
 db = PyMySQL.connect("localhost","testuser","test123","TESTDB" )
 
-# prepare a cursor object using cursor() method
+## prepare a cursor object using cursor() method
 cursor = db.cursor()
 
 # Prepare SQL query to UPDATE required records
@@ -1791,31 +1792,34 @@ db.close()
 ### Delete Operation
 
 Operasi DELETE diperlukan bila Anda ingin menghapus beberapa catatan dari database Anda. Berikut ini adalah prosedur untuk menghapus semua catatan dari EMPLOYEE dimana AGE lebih dari 20
-```
+
+
 {% highlight python %}
+```
 import PyMySQL
 
-# Open database connection
+## Open database connection
 db = PyMySQL.connect("localhost","testuser","test123","TESTDB" )
 
-# prepare a cursor object using cursor() method
+## prepare a cursor object using cursor() method
 cursor = db.cursor()
 
-# Prepare SQL query to DELETE required records
+## Prepare SQL query to DELETE required records
 sql = "DELETE FROM EMPLOYEE WHERE AGE > '%d'" % (20)
 try:
-   # Execute the SQL command
+   ## Execute the SQL command
    cursor.execute(sql)
-   # Commit your changes in the database
+   ## Commit your changes in the database
    db.commit()
 except:
-   # Rollback in case there is any error
+   ## Rollback in case there is any error
    db.rollback()
 
-# disconnect from server
+## disconnect from server
 db.close()
 {% endhighlight %}
 ```
+
 Selain itu masih ada beberapa operasi sebagai berikut :
 
 - Commit Operation db.commit()
